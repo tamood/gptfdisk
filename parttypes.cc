@@ -363,7 +363,8 @@ void PartType::AddAllTypes(void) {
 
    // A straggler Linux partition type....
    AddType(0xfd00, "A19D880F-05FC-4D3B-A006-743F0F84911E", "Linux RAID");
-
+   AddType(0xfd01, "5B193300-FC78-40CD-8002-E86C45580B47", "FSBL");
+   AddType(0xfd02, "2E54B353-1271-4842-806F-E436D6Af6985", "OPENSBI");
    // Note: DO NOT use the 0xffff code; that's reserved to indicate an
    // unknown GUID type code.
 } // PartType::AddAllTypes()
